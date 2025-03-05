@@ -6,7 +6,7 @@ pipeline {
 stage('clone') {  // Stage for building your project
             steps {
                 // echo 'Building the project...'
-                git 'https://github.com/22P61A0560/first.git'
+                git 'https://github.com/gollapallydeepthi/devops__.git'
                 // Add build commands here (e.g., mvn, npm, etc.)
             }
         }
@@ -38,9 +38,4 @@ stage('Build') {  // Stage for building your project
     post {
         success {
             echo 'Pipeline completed successfully!'
-        }
-        failure {
-            echo 'Pipeline failed.'
-        }
-    }
-}
+        
